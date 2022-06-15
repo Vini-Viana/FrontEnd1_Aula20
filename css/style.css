@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+/* Cabeçalho */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 35px;
+    background: #222222;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+  }
+
+  nav a {
+    display: none;
+    }
+
+.btn-mobile{
+    background-color: #222222;
+    border: none;
+}
+
+  @media (min-width: 1024px) {
+    nav a {
+      display: inline-block;
+      color: #F3F3F3;
+    }
+    nav button {
+      display: none;
+    }
+  }
+
+
+  /* Main - Container */
+
+  /* Banner   */     
+  .banner {
+    background-image: url(../img/banner-mobile.svg);
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-text {
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #F3F3F3;
+    padding: 38px;
+    margin-top: 20px;
+  }
+
+  .banner-btn {
+    background-color: #D01418;
+    color: #F3F3F3;
+    width: 220px;
+    height: 60px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+  }
+
+  span {
+    color: #D01418;
+  }
+
+  @media (min-width: 1024px) {
+    .banner-text {
+        margin-top: 50px;
+    }
+  }
+
+  /* Cards */
+
+  main {
+    background-color: #F3F3F3;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .container-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .card {
+    background-color: #fff;
+    width: 240px;
+    height: 322px;
+    padding: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px; 
+    border-radius: 5px;
+  }
+
+  @media (min-width: 800px) {
+    .container-cards {
+        display: flex;
+        flex-direction: row;
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+  }
+  
+  .price-content {
+    border-top: 0.2px solid #222222;
+    margin-top: 10px;
+  }
+
+
+  .price {
+    font-size: 20px;
+  }
+
+  .payment {
+    font-size: 13px;
+  }
+
+  .shipping {
+    font-size: 10px;
+    color: #619D00;
+  }
+
+  /* Produtos Estrelas - Banners*/
+
+  .produtos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+  }
+
+  .banner-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  @media (min-width: 800px) {
+    .banner-produto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 100px;
+    }
+  }
+
+  /* Footer */
+
+  
